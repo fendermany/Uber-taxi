@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"h1 {\n    color: ffffff;\n    background-color: green; }\n"
+	],
+	"names": [],
+	"mappings": ";;AAAA,AAAA,EAAE,CAAC;EACC,KAAK,EAAE,MAAM;EACb,gBAAgB,EAAE,KAAK;CAAG"
+}
