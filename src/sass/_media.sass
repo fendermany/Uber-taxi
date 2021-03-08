@@ -6,7 +6,7 @@
             font-size: 13px
     .promo
         &_header
-            font-size: 50px
+            font-size: 46px
         &_subheader
             font-size: 26px
         &_dscr
@@ -27,24 +27,30 @@
                 width: 16%
             &_main
                 width: 67%
+    .reasons
+        &_descr
+            width: 300px
 
-@media (max-width: 991px)
+@media (max-width: 991.98px)
 	.menu
 		&_item
 			padding-right: 8px
 		&_link
 			font-size: 10px
 
+	.title
+		font-size: 35px
+
 	.subheader
 		&_official
-			font-size: 12px
+			font-size: 11px
 		&_phone
 			font-size: 20px
 		&_logo
 			img
 				width: 100%
 		&_btn
-			font-size: 15px
+			font-size: 13px
 			width: 100%
 			height: 40px
 	.promo
@@ -61,11 +67,17 @@
 			align-items: center
 		&_subtitle
 			margin-top: 15px
+			text-align: center
+		&_round
+			margin-right: 0
 	.mobile
 		&_item
 			width: 220px
 			height: 220px
-			padding-top: 60px
+			padding-top: 50px
+		&_dscr
+			width: 95%
+			margin: 0 auto
 	.footer
 		&_wrapper
 			display: block
@@ -82,7 +94,7 @@
 	.xs-visible-footer
 		display: flex
 
-@media (max-width: 767px)
+@media (max-width: 767.98px)
 	.menu
 		position: fixed
 		flex-direction: column
@@ -155,21 +167,28 @@
 	.promo
 		&_header
 			line-height: 45px
+			font-size: 30px
+		&_subheader
+			margin-top: 10px
 		&_dscr
 			font-size: 17px
 	.mobile
 		&_item
 			width: 250px
 			height: 250px
-		&_dscr
-			font-size: 20px
+			padding-top: 60px
 	.reasons
 		&_descr
 			width: 482px
 		&_subtitle
 			text-align: center
+		&_text
+			text-align: center
+	.title
+		font-size: 26px
+		margin-top: 28px
 
-@media (max-width: 575px)
+@media (max-width: 575.98px)
 	nav
 		height: 30px
 	.menu
@@ -190,18 +209,28 @@
 			font-size: 10px
 	.promo
 		min-height: 340px
-		padding: 145px 0 35px 0
+		padding: 125px 0 35px 0
+		background: url('../img/background_car_mobile.png') no-repeat center/cover
+		&_btn
+			margin-top: 75px
+			width: 210px
+			height: 50px
+			font-size: 16px
+			line-height: 50px
+			&:hover
+				background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
 		&_header
-			font-size: 35px
+			font-size: 29px
 		&_dscr
 			display: none
 	.title
 		font-size: 15px
-		font-weight: 900
+		font-weight: 700
 		margin-top: 16px
-		line-height: 12px
+		line-height: 16px
 	.subtitle
 		margin-top: 13px
+		font-size: 14px
 	.reasons
 		padding: 23px 0 55px
 		&_block
@@ -210,11 +239,19 @@
 			width: auto
 		&_subtitle
 			text-align: left
+			min-height: 20px
+			font-size: 16px
+		&_text
+			text-align: left
+			font-size: 15px
 	.mobile
 		padding: 23px 0 43px 0
 		&_item
 			width: 290px
-			height: 290px
+			height: 255px
+			padding-top: 80px
+		&_dscr
+			font-size: 18px
 	.xs-hidden-auto
 		display: none
 	.xs-visible-auto
@@ -243,6 +280,24 @@
 			text-align: center;
 	.listings
 		padding: 25px 0 26px 0
+		&_title
+			margin-top: 30px
+			font-size: 16px
+		&_bonus
+			margin-top: 15px
+			margin-bottom: 0
+			font-size: 14px
+			line-height: 16px
+		&_wrapper
+			font-size: 14px
+			line-height: 16px
+			padding-left: 0
+			margin-top: 7px
+			margin-bottom: 0
+			li
+				margin-top: 5px
+				&::before
+					transform: translateY(-2px)
 	.world
 		padding: 25px 0 25px 0
 		position: relative
@@ -252,8 +307,10 @@
 			bottom: 25px
 			left: 50%
 			transform: translateX(-50%)
+			width: 222px
 			a
-				font-size: 12px
+				font-size: 15px
+				line-height: 15px
 	.footer
 		padding: 25px 0 20px 0
 		&_polosa
@@ -265,7 +322,7 @@
 					width: 281px
 					line-height: 14px
 					a
-						font-style: 12px
+						font-size: 13px
 				&_downmenu
 					width: 244px
 					flex-wrap: wrap
@@ -277,10 +334,6 @@
 			&_download
 				margin-top: 20px
 	.subheader
-		&_btn
-			&:hover
-				background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-	.promo
 		&_btn
 			&:hover
 				background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
