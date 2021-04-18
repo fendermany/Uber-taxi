@@ -26,6 +26,6 @@
     "not dead"
   ],
   "dependencies": {
-    "lazysizes": "^5.3.0"
+    "lazysizes": "^5.3.1"
   }
 }
